@@ -128,6 +128,17 @@ img { max-width: 100%; display: block; }
 
 .nav-links a:hover { color: var(--text); }
 
+.nav-telegram {
+  width: 38px;
+  height: 38px;
+  margin-left: 24px;
+}
+
+.nav-telegram svg {
+  width: 16px;
+  height: 16px;
+}
+
 .theme-toggle {
   display: flex;
   align-items: center;
@@ -138,7 +149,7 @@ img { max-width: 100%; display: block; }
   background: var(--panel);
   border: 1px solid var(--panel-border);
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 12px;
   transition: border-color 0.2s, transform 0.2s;
 }
 
