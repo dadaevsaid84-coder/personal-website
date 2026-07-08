@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Said Dadaev | VibeCodding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function () {
+    var saved = localStorage.getItem('theme');
+    var theme = saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="logo">Vibe<span>Codding</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">Men haqimda</a>
+      <a href="#skills">Ko'nikmalar</a>
+      <a href="#projects">Loyihalar</a>
+      <a href="#services">Xizmatlar</a>
+      <a href="#contact">Aloqa</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Rejimni almashtirish">
+      <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+    <button class="burger" id="burger" aria-label="Menyu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Salom, men</p>
+        <h1>Said Dadaev</h1>
+        <p class="brand-line">Asoschisi — <span class="gradient-text">VibeCodding</span></p>
+        <p class="hero-desc">
+          VibeCodding orqali dastur, web sahifa va platformalar tuzaman.
+          Ta'lim yo'nalishi bo'yicha o'quv dasturlari yarataman.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Loyihalarni ko'rish</a>
+          <a href="#contact" class="btn btn-outline">Bog'lanish</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://t.me/DadaevSaid" target="_blank" rel="noopener" aria-label="Telegram" class="social-icon">
+            <svg viewBox="0 0 24 24"><path d="M21.05 3.16 2.9 10.36c-1.24.5-1.24 1.2-.23 1.5l4.65 1.45 1.8 5.53c.22.6.37.85.75.85.32 0 .47-.15.65-.34l1.63-1.58 3.4 2.5c.62.35 1.07.17 1.23-.57l2.22-10.47c.24-.98-.36-1.42-1.15-1.07Zm-11.7 8.02 6.85-4.32c.34-.2.65-.1.4.13l-5.6 5.06-.22 3.02Z"/></svg>
+          </a>
+          <a href="https://instagram.com/DadaevSaid" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.21.6 1.77 1.15.55.56.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.94.01 9.28 0 12 0Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2A3.2 3.2 0 1 1 12 6.8a3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 1 0-2.34 1.17 1.17 0 0 1 0 2.34Z"/></svg>
+          </a>
+          <a href="https://youtube.com/@DadaevSaid" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon">
+            <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5v-7l6.3 3.5-6.3 3.5Z"/></svg>
+          </a>
+          <a href="https://facebook.com/DadaevSaid" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-glow"></div>
+        <img src="profile.png" alt="Said Dadaev">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Men <span class="gradient-text">haqimda</span></h2>
+      <p class="section-lead reveal">
+        Men Said Dadaev — <strong>VibeCodding</strong> brendi orqali dastur, web sahifa va platformalar tuzaman.
+        Asosiy yo'nalishlarimdan biri ta'lim sohasi bo'lib, o'quvchilarga bilim olishda yordam beradigan
+        o'quv dasturlari va platformalarini yarataman. Maqsadim — g'oyalarni sifatli va foydali
+        raqamli mahsulotlarga aylantirish.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 class="section-title reveal">Ko'nikmalarim</h2>
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M8 3 2 12l6 9M16 3l6 9-6 9M14 2 10 22"/></svg>
+          </div>
+          <h3>Web dasturlash</h3>
+          <p>Zamonaviy, tez va responsive web sahifa va ilovalar yaratish.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Zm-10 5v7M2 10v6c0 1 4.48 3 10 3s10-2 10-3v-6"/></svg>
+          </div>
+          <h3>Ta'lim dasturlari</h3>
+          <p>O'quvchilar uchun samarali va tushunarli o'quv dasturlari ishlab chiqish.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+          </div>
+          <h3>Platforma yaratish</h3>
+          <p>Foydalanuvchilarga qulay, kengaytiriladigan raqamli platformalar qurish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Loyihalarim</h2>
+      <div class="grid grid-1">
+        <div class="card project-card reveal">
+          <div class="project-badge">IELTS 8.0</div>
+          <h3>English Learning System</h3>
+          <p>
+            Boshlang'ich darajadan IELTS 8.0 darajagacha bo'lgan ingliz tilini o'rgatuvchi
+            o'quv platformasi. Bosqichma-bosqich dars materiallari, mashqlar va progress
+            kuzatuvi orqali o'quvchini maqsadli natijaga olib boradi.
+          </p>
+          <div class="tag-list">
+            <span class="tag">Ta'lim</span>
+            <span class="tag">Til o'rganish</span>
+            <span class="tag">Platforma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section alt">
+    <div class="container">
+      <h2 class="section-title reveal">Xizmatlarim</h2>
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg>
+          </div>
+          <h3>Web sahifa yaratish</h3>
+          <p>Shaxsiy va biznes uchun zamonaviy, tez yuklanadigan web saytlar.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Web app yaratish</h3>
+          <p>Funksional va masshtablanuvchi veb ilovalar ishlab chiqish.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Zm-10 5v7M2 10v6c0 1 4.48 3 10 3s10-2 10-3v-6"/></svg>
+          </div>
+          <h3>O'quv platformasi yaratish</h3>
+          <p>Ta'lim muassasalari va o'qituvchilar uchun o'quv platformalari qurish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title reveal">Bog'lanish</h2>
+      <p class="section-lead reveal">Ijtimoiy tarmoqlarda meni kuzatib boring yoki yozib qoling.</p>
+      <div class="contact-socials reveal">
+        <a href="https://t.me/DadaevSaid" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24"><path d="M21.05 3.16 2.9 10.36c-1.24.5-1.24 1.2-.23 1.5l4.65 1.45 1.8 5.53c.22.6.37.85.75.85.32 0 .47-.15.65-.34l1.63-1.58 3.4 2.5c.62.35 1.07.17 1.23-.57l2.22-10.47c.24-.98-.36-1.42-1.15-1.07Zm-11.7 8.02 6.85-4.32c.34-.2.65-.1.4.13l-5.6 5.06-.22 3.02Z"/></svg>
+          Telegram
+        </a>
+        <a href="https://instagram.com/DadaevSaid" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.21.6 1.77 1.15.55.56.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.94.01 9.28 0 12 0Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2A3.2 3.2 0 1 1 12 6.8a3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 1 0-2.34 1.17 1.17 0 0 1 0 2.34Z"/></svg>
+          Instagram
+        </a>
+        <a href="https://youtube.com/@DadaevSaid" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5v-7l6.3 3.5-6.3 3.5Z"/></svg>
+          YouTube
+        </a>
+        <a href="https://facebook.com/DadaevSaid" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Said Dadaev — VibeCodding. Barcha huquqlar himoyalangan.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
