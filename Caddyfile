@@ -1,0 +1,3 @@
+saiddadaev.uz, www.saiddadaev.uz {
+    reverse_proxy site:80
+}
